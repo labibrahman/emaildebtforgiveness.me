@@ -19,9 +19,9 @@ a:hover {
 }
 hr {
 	height: 1px;
-		border: none;
-		background: #ddd;
-		margin: 0 80px;
+	border: none;
+	background: #ddd;
+	margin: 0 80px;
 }
 .aside {
 	padding-top: 15px;	
@@ -30,60 +30,46 @@ hr {
 	vertical-align: top;
 }
 
-body {
-  background: #eee;
-}
-
-div {
-  margin: 15% auto;
-}
-
-body {
-  background: #eee;
-}
-
 .email-icon {
-  margin: 15% auto;
-  position: relative;  
-  transform: rotate(360deg);
-  width: 4em;
-  height: 3.1em;
-  font-size: 20px; /* Fully scaling, just change px value */
+	margin: 50px auto 30px;
+	position: relative;  
+	transform: rotate(360deg);
+	width: 4em;
+	height: 3.1em;
+	cursor: pointer;
+	font-size: 20px; /* Fully scaling, just change px value */
 }
-
 .email-icon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 0;
-  bottom: 0;
-  border-style: solid;
-  border-color: #0046fe;
-  border-width: 2em;
-  border-top-width: 1.6em;
-  border-bottom-width: 1.6em;
-  border-top-color: transparent;
-  border-left-color: #4477FF;
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 0;
+	bottom: 0;
+	border-style: solid;
+	border-color: #0046fe;
+	border-width: 2em;
+	border-top-width: 1.6em;
+	border-bottom-width: 1.6em;
+	border-top-color: transparent;
+	border-left-color: #4477FF;
 }
-
 .email-icon:before {
-  content: "\2630";
-  color: #264596;
-  background: #ffffff;
-  font-size: 2em;
-  line-height: 1em;
-  text-align: center;
-  border: .05em solid #264596;
-  position: absolute;
-  z-index: -1;
-  top: -.2em;
-  left: .1em;
-  right: .1em;
-  bottom: .1em;
-  transition: .2s;
+	content: "\2630";
+	color: #264596;
+	background: #ffffff;
+	font-size: 2em;
+	line-height: 1em;
+	text-align: center;
+	border: .05em solid #264596;
+	position: absolute;
+	z-index: -1;
+	top: -.2em;
+	left: .1em;
+	right: .1em;
+	bottom: .1em;
+	transition: .2s;
 }
-
 .email-icon:hover:before {
-  top: -.7em;
+	top: -.7em;
 }
