@@ -31,7 +31,10 @@ hr {
 }
 small a {
 	color: inherit;
-	border-bottom-color: #ddd;
+	border-bottom-color: #DDDDDD;
+}
+small a:hover {
+	border-bottom-color: #848484;
 }
 .email-icon {
 	margin: 50px auto 30px;
