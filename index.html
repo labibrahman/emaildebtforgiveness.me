@@ -44,11 +44,22 @@
 			color: #0046fe;
 			border-bottom-color: #A9C1FF;
 		}
+		hr {
+			height: 1px;
+  			border: none;
+  			background: #ddd;
+		}
+		.aside {
+			padding-top: 15px;	
+		}
+		.button {
+			vertical-align: top;
+		}
 	</style>
 
 </head>
 <body>
-	<div class="container">
+	<main class="container">
 		<header class="header">
 			<h1><a href="http://emaildebtforgiveness.me">Email Debt Forgiveness</a></h1>  
 		</header>
@@ -68,12 +79,12 @@
 			
 			<script language="javascript">
 			function emailCurrentPage(){
-        			window.location.href="mailto:?subject="+document.title+"&body="+escape(window.location.href);
-        		}
-    			</script>
-    			<a class="button" href="javascript:emailCurrentPage()">Email this</a>
+				window.location.href="mailto:?subject="+document.title+"&body="+escape(window.location.href);
+			}
+			</script>
+			<a class="button" href="javascript:emailCurrentPage()">Email this</a>
 		</aside>
-	</div>
+	</main>
 
 	<!--[if IE]>
 		<script src="/js/html5.js"></script>
