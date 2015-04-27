@@ -29,7 +29,10 @@ hr {
 .button {
 	vertical-align: top;
 }
-
+small a {
+	color: inherit;
+	border-bottom-color: #ddd;
+}
 .email-icon {
 	margin: 50px auto 30px;
 	position: relative;  
