@@ -50,6 +50,7 @@ small a:hover {
 	border-bottom-color: #848484;
 }
 .email-icon {
+	border: none;
 	display: inline-block;
 	margin: 50px auto 30px;
 	position: relative;
