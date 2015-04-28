@@ -21,13 +21,26 @@ hr {
 	height: 1px;
 	border: none;
 	background: #ddd;
-	margin: 0 80px;
+	max-width: 550px;
+	margin: 20px auto;
+}
+ol {
+	padding-left: 20px;
+}
+.what {
+	text-align: left;
+	max-width: 550px;
+	margin: 0 auto;
+}
+.what h2 {
+	text-align: center;
 }
 .aside {
-	padding-top: 15px;	
+	padding-top: 15px;
 }
 .button {
 	vertical-align: top;
+	margin: 0 10px;
 }
 small a {
 	color: inherit;
@@ -37,8 +50,9 @@ small a:hover {
 	border-bottom-color: #848484;
 }
 .email-icon {
+	display: inline-block;
 	margin: 50px auto 30px;
-	position: relative;  
+	position: relative;
 	transform: rotate(360deg);
 	width: 4em;
 	height: 3.1em;
