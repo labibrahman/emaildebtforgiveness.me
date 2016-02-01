@@ -2,6 +2,8 @@ body {
 	background: white;
 	margin: 0;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	line-height: 1.8rem;
+	font-weight: 300;
 }
 .container {
 	max-width: 800px;
@@ -31,6 +33,9 @@ hr {
 }
 ol {
 	padding-left: 20px;
+}
+strong {
+	font-weight: 500;
 }
 .what {
 	text-align: left;
@@ -98,4 +103,8 @@ small a:hover {
 }
 .email-icon:hover:before {
 	top: -.7em;
+}
+
+.twitter-share-button {
+	vertical-align: sub;
 }
