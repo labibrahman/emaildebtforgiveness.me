@@ -21,7 +21,8 @@ baseurl: ''
 title: 'Email Debt Forgiveness Day'
 description: 'If there’s an email response you’ve wanted to send but been too anxious to send, you can send it on April 30th'
 permalink: pretty
-logo: "/assets/favicons/favicon-96x96.png"
+logo: "/assets/logo.svg"
+avatarurl: "/assets/logo.svg"
 encoding: utf-8
 lang: en-GB
 css_inline: true
