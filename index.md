@@ -32,5 +32,10 @@ https://twitter.com/intent/tweet/?url={{ site.url }}{{ page.url }}&text={{ page.
 {% include button.html text="Tweet this page" icon="twitter" color="#0d94e7" link=tweet_url %} {% include button.html text="Start my email" icon="email" link="mailto:?subject=Re:&body=Please%20forgive%20me%20" %}{: style="text-align: center"}
 
 <script type="text/javascript">
-document.querySelector('[href="#email"]').setAttribute('href', '{{ 'moc.aidemtelmig@llaylper:otliam' | split: "" | reverse | join: "" }}');
+  document.querySelector('[href="#email"]').setAttribute('href', '{{ 'moc.aidemtelmig@llaylper:otliam' | split: "" | reverse | join: "" }}');
 </script>
+
+## Don't forget
+So you don't forget for next time, add an event to your calendar and **set it to repeat every year**:
+
+{% include button.html text="Google Calendar" link="#google-cal" color="#ea4335" icon="calendar" %} {% include button.html text="Outlook / Apple Calendar" link="#client-cal" color="#333333" icon="calendar" %}{: style="text-align: center"}

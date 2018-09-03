@@ -1,0 +1,78 @@
+<script type="text/javascript">
+// Based on https://github.com/contra/generate-calendar-url
+
+const formatTime = (date, allDay) => {
+  if (allDay) {
+    return date.toISOString().replace(/-|:|\.\d+/g, "").split('T')[0];
+  }
+  return date.toISOString().replace(/-|:|\.\d+/g, "");
+};
+
+const google = ({
+  title = "",
+  start = "",
+  end = "",
+  allDay = false,
+  description = "",
+  location = "",
+  url = ""
+  }) => {
+  const data = {
+    action: "TEMPLATE",
+    text: title,
+  dates: `${formatTime(start, allDay)}/${formatTime(end, allDay)}`,
+    details: description + "%0A" + url,
+    location: location
+  };
+
+  return `https://www.google.com/calendar/render?${Object.keys(data)
+    .map(key => key + "=" + data[key])
+    .join("&")}`;
+};
+
+const ics = ({
+  title = "",
+  start = "",
+  end = "",
+  allDay = false,
+  description = "",
+  location = "",
+  url = ""
+  }) => {
+  return encodeURI(
+    "data:text/calendar;charset=utf8," +
+      [
+        `BEGIN:VCALENDAR`,
+        `VERSION:2.0`,
+        `BEGIN:VEVENT`,
+        `URL:${url}`,
+        `DTSTART:${formatTime(start, allDay)}`,
+        `DTEND:${formatTime(end, allDay)}`,
+    `SUMMARY:${title}`,
+    `DESCRIPTION:${description}`,
+    `LOCATION:${location}`,
+        `END:VEVENT`,
+        `END:VCALENDAR`
+      ].join("\n")
+  );
+};
+
+const cal = {
+  google: google,
+  client: ics
+};
+
+// title, start, and end are required
+const event = {
+  title: "{{ site.title }}",
+  start: new Date("April 31, 2019"),
+  end: new Date("May 2, 2019"),
+  allDay: true,
+  location: "Your inbox",
+  description: "Today is the day you reply to all those emails you've ignored",
+  url: "{{ site.url }}"
+};
+
+document.querySelector("[href='#google-cal']").href = cal.google(event);
+document.querySelector("[href='#client-cal']").href = cal.client(event);
+</script>
