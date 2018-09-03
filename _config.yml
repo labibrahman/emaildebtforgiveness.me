@@ -32,10 +32,6 @@ css_inline: true
 twitter:
   username: DavidDarnes
 author: DavidDarnes
-social:
-  name: David Darnes
-  links:
-    - https://twitter.com/DavidDarnes
 
 # Footer nav
 navigation_footer:
