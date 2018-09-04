@@ -1,0 +1,46 @@
+# Set theme
+theme: alembic-jekyll-theme
+
+# File excludes
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+
+# Set plugins
+plugins:
+- jekyll-sitemap
+- jekyll-seo-tag
+- jekyll-redirect-from
+- jekyll-default-layout
+- jemoji
+
+# Site settings
+url: 'https://emaildebtforgiveness.me'
+baseurl: ''
+title: 'Email Debt Forgiveness Day'
+description: 'If there’s an email response you’ve wanted to send but been too anxious to send, you can send it on April 30th'
+permalink: pretty
+logo: "/assets/logo.svg"
+avatarurl: "/assets/logo.svg"
+encoding: utf-8
+lang: en-GB
+css_inline: true
+
+# Social image
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: "/assets/default-social-image.png" # Default image for sharing
+
+
+# SEO
+twitter:
+  username: DavidDarnes
+author: DavidDarnes
+
+# Footer nav
+navigation_footer:
+  Spontaneously made by David Darnes: "https://twitter.com/daviddarnes"

@@ -1,0 +1,33 @@
+---
+title: false
+styles: true
+---
+
+@import "alembic";
+
+.feature .container {
+  min-height: 45vh;
+}
+
+.footer {
+  background: none;
+  border-top: 1px solid $captionColour;
+  margin: 0 1.6rem;
+  .container {
+    justify-content: center;
+  }
+  a {
+    color: lighten($accentColour, 20%);
+    &:hover {
+      color: lighten($accentColour, 5%);
+    }
+  }
+}
+
+li::before {
+  color: $accentColour;
+}
+
+.button {
+  border-radius: .1em;
+}
