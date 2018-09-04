@@ -4,7 +4,7 @@ layout: page
 feature_text: |
   # Celebrate Email Debt Forgiveness Day!
   If there’s an email response you’ve wanted to send but been too anxious to send, you can send it on **April 30th**
-  <div class="email-icon"></div>
+feature_logo: true
 ---
 
 ## How does it work?
@@ -24,18 +24,14 @@ On **April 30th**:
 1. Send and enjoy your anxiety-free day
 
 ## Anything else?
-If you’d like to share your Email Debt Forgiveness Day story you can email [Reply All](http://gimletmedia.com/show/reply-all/) and [tell them your story](#email), or even call and leave a message about it on [1 (917) 475-6668](tel:19174756668).
+If you’d like to share your Email Debt Forgiveness Day story you can email [Reply All](http://gimletmedia.com/show/reply-all/) and [tell them your story](moc.aidemtelmig@llaylper:otliam), or even call and leave a message about it on [1 (917) 475-6668](tel:19174756668).
 
 {% capture tweet_url %}
 https://twitter.com/intent/tweet/?url={{ site.url }}{{ page.url }}&text={{ page.title | uri_encode }}
 {% endcapture %}
 {% include button.html text="Tweet this page" icon="twitter" color="#0d94e7" link=tweet_url %} {% include button.html text="Start my email" icon="email" link="mailto:?subject=Re:&body=Please%20forgive%20me%20" %}{: style="text-align: center"}
 
-<script type="text/javascript">
-  document.querySelector('[href="#email"]').setAttribute('href', '{{ 'moc.aidemtelmig@llaylper:otliam' | split: "" | reverse | join: "" }}');
-</script>
-
 ## Don't forget
 So you don't forget for next time, add an event to your calendar and **set it to repeat every year**:
 
-{% include button.html text="Google Calendar" link="#google-cal" color="#ea4335" icon="calendar" %} {% include button.html text="Outlook / Apple Calendar" link="#client-cal" color="#333333" icon="calendar" %}{: style="text-align: center"}
+{% include button.html text="Google Calendar" link="#google-cal" color="#ea4335" icon="google" %} {% include button.html text="Outlook / Apple Calendar" link="#client-cal" color="#333333" icon="apple" %}{: style="text-align: center"}

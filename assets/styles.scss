@@ -28,48 +28,6 @@ li::before {
   color: $accentColour;
 }
 
-.email-icon {
-	border: none;
-	display: inline-block;
-	margin: 1em auto;
-	position: relative;
-	transform: rotate(360deg);
-	width: 4em;
-	height: 3.1em;
-	cursor: pointer;
-	font-size: 20px; /* Fully scaling, just change px value */
-  &::before {
-  	content: "\2630";
-  	color: #264596;
-  	background: #ffffff;
-  	font-size: 2em;
-  	line-height: 1em;
-  	text-align: center;
-  	border: .05em solid #264596;
-  	position: absolute;
-  	z-index: -1;
-  	top: -.2em;
-  	left: .1em;
-  	right: .1em;
-  	bottom: .1em;
-  	transition: .2s;
-  }
-  &::after {
-  	content: "";
-  	position: absolute;
-  	width: 0;
-  	height: 0;
-  	left: 0;
-  	bottom: 0;
-  	border-style: solid;
-  	border-color: #0046fe;
-  	border-width: 2em;
-  	border-top-width: 1.6em;
-  	border-bottom-width: 1.6em;
-  	border-top-color: transparent;
-  	border-left-color: #4477FF;
-  }
-  &:hover::before {
-  	top: -.7em;
-  }
+.button {
+  border-radius: .1em;
 }

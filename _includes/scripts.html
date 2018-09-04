@@ -1,6 +1,10 @@
 <script type="text/javascript">
-// Based on https://github.com/contra/generate-calendar-url
+// Descramble scrambled emailto links
+const mailLinks = document.querySelectorAll('[href$=":otliam"]');
+[...mailLinks].map(link => link.href = link.getAttribute('href').split("").reverse().join(""));
 
+// Calendar event links, Google Calendar and iCal / Outlook
+// Based on https://github.com/contra/generate-calendar-url
 const formatTime = (date, allDay) => {
   if (allDay) {
     return date.toISOString().replace(/-|:|\.\d+/g, "").split('T')[0];
@@ -62,7 +66,6 @@ const cal = {
   client: ics
 };
 
-// title, start, and end are required
 const event = {
   title: "{{ site.title }}",
   start: new Date("April 31, 2019"),
