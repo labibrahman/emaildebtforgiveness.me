@@ -27,6 +27,14 @@ encoding: utf-8
 lang: en-GB
 css_inline: true
 
+# Social image
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: "/assets/default-social-image.png" # Default image for sharing
+
 
 # SEO
 twitter:
