@@ -68,14 +68,13 @@ const cal = {
 
 const event = {
   title: "{{ site.title }}",
-  start: new Date("April 31, 2019"),
-  end: new Date("May 2, 2019"),
-  allDay: true,
+  start: new Date("April 30, 2019 09:00"),
+  end: new Date("April 30, 2019 17:30"),
   location: "Your inbox",
   description: "Today is the day you reply to all those emails you've ignored",
   url: "{{ site.url }}"
 };
-
+  
 document.querySelector("[href='#google-cal']").href = cal.google(event);
 document.querySelector("[href='#client-cal']").href = cal.client(event);
 </script>
